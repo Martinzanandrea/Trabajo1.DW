@@ -10,32 +10,187 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+<body class="m-0 p-0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar py-0">
+        <div class="container-fluid navMe">
+            <!--Logo-->
+            <a class="navbar-brand logo ms-5" href="#">
+                <img src="/img/logo-utn.png " alt="Utn logo" class="me-2 ms-5 py-2">
+                <span class="text-white">FRcon</span>
+            </a>
+
+            <!--Hamburguesa-->
+            <button class="navbar-toggler bg-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+            <!--Menu-->
+            <div class="collapse navbar-collapse espacio-derecha fs " id="navbarNav">
+                <ul class="navbar-nav text-center text-sm-end text-md-end ">
+                    <li class="nav-item text-white">
+                        <a class="nav-link active white-color text-white ms-5" aria-current="page"
+                            href="#">La conferencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link text-white" href="#">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link text-white" href="#">Lugar y Fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled text-white" aria-disabled="true">Conviertete en un orador</a>
                     </li>
+                    <div class="nav-item">
+                        <a class="nav-link disabled text-white">Comprar Tickets</a>
+                    </div>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="container-fluid p-0">
+        <img src="/img/ba1.jpg" alt="" class=" img-fluid w-100"
+            style="height: 45.5rem; object-fit: cover; filter: brightness(40%);">
+        <div class="position-absolute  text-white text-end p-4" style="bottom: 8rem; right: 6rem;">
+            <h2 class="fw-bold fs-3">UTN FRCon</h2>
+            <p style="max-width: 600px; margin: 0 auto;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci id, excepturi illo vel accusamus,
+                dolorum recusandae, deserunt quia earum asperiores nesciunt quas veritatis facilis in reiciendis impedit
+                pariatur? Adipisci, exercitationem?
+            </p>
+            <div class="mt-3 d-inline-flex flex-wrap justify-content-end ">
+                <button class="btn btn-outline-light p-1 me-2">Quiero ser orador</button>
+                <button class="btn btn-success p-1">Comprar Tickets</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid bg-white text-center m-0 py-1">
+        <p class="text-dark mt-2 my-0">CONOCE A LOS </p>
+        <h2 class="text-dark fw-bold mt-1 my-2">ORADORES</h2>
+    </div>
+    <div class="row justify-content-center  ">
+
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 me-2">
+            <div class="card h-100">
+                <img src="/img/steve.jpg" class="card-img-top" alt="Steve Jobs">
+                <div class="card-body">
+                    <span class="badge text-bg-warning">JavaScript</span>
+                    <span class="badge text-bg-info text-white">React</span>
+                    <h5 class="card-title">Steve Jobs</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos facilis quam eos
+                        adipisci, consectetur aperiam soluta doloribus reprehenderit quidem iusto culpa, maxime fuga
+                        labore voluptate earum. Delectus necessitatibus consequuntur nemo.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 me-2">
+            <div class="card">
+                <img src="/img/bill.jpg" class="card-img-top" alt="Bill Gates">
+                <div class="card-body">
+                    <span class="badge text-bg-warning">JavaScript</span>
+                    <span class="badge text-bg-info text-white">React</span>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                        repellendus esse corrupti totam, eos harum odio debitis, porro possimus vel nostrum provident
+                        aliquid libero aspernatur laudantium perspiciatis quam voluptatem mollitia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card">
+                <img src="/img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+                <div class="card-body">
+                    <span class="badge text-bg-secondary">Negocios</span>
+                    <span class="badge text-bg-danger">Startups</span>
+                    <h5 class="card-title">Ada Lovelace</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facilis illo sed
+                        incidunt ab, accusantium ut assumenda tempore laboriosam ipsum minima id dignissimos, distinctio
+                        sunt nulla nostrum error veritatis totam!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row p-0 ">
+            <div class="col-md-6  col-sm-12 p-0">
+                <img src="/img/ba3.jpg" alt="" class="img-fluid w-100 " style="height: 40rem ; object-fit: cover;">
+            </div>
+            <div class="col-md-6 col-sm-12  bg-bs p-4 " style="height: 40rem;">
+                <h2 class="text-white">Bs As-Octubre</h2>
+                <p class="text-white">Buenos Aires es la capital y ciudad más poblada de la RepúblicaArgentina. Sus nombres oficiales son Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires (CABA).También es llamada Capital Federal, sede del Gobierno nacional.Es uno de los 24 distritos, o «jurisdicciones de primer orden»,que conforman el país. Desde 1996 es una ciudad autónoma, por lo que tiene sus propios poderes ejecutivo, legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del Río de la Plata, en la región pampeana. La ciudad de Buenos Aires fue cedida en 1880 por la provincia de Buenos Aires para que fuera la capital federal del país; a partir de 2020 esconsiderada «capital principal», junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994, goza de un régimen de autonomía.Su tejido urbano se asemeja a un abanico que limita al sur, oeste y norte con la lindante provincia de Buenos Aires y al este con el Río de la Plata. Oficialmente la ciudad se encuentra dividida en 15 comunas que agrupan a 48 barrios</p>
+                <div class="mt-3 d-inline-flex flex-wrap justify-content-end">
+                    <button class="btn btn-outline-light  ">Conoce mas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid bg-white text-center m-0 py-1">
+        <p class="text-dark mt-2 my-0">CONVIERTETE EN UN</p>
+        <h2 class="text-dark fw-bold mt-1 my-2">ORADOR</h2>
+        <p>Anotate como orador para dar una <a href="" type="disabled" class="link-dark" >charla ignite.</a> Cuentanos de que quieres hablar!</p>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-sm-12 d-flex" style="width: 30rem;">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex" style="width: 30rem;">
+                <input type="text" class="form-control text-secondary" placeholder="Apellido" aria-label="Last name">
+            </div>
+            <div class="form-floating" style="width: 60rem;">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 8rem;"></textarea>
+                <label for="floatingTextarea" class="m-0 text-secondary" style="padding-left: 1.5rem;">Sobre que quieres hablar?</label>
+                <p class="text-start text-secondary">Recuerda incluir un titulo para tu charla</p>
+            </div>
+            <div class="d-flex justify-content-center my-3" style="max-width: 60rem;">
+                <button class="btn btn-green w-100" type="button">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #1e516e;" class="py-4">
+        <div class="container">
+            <div class="row" id="footer-items">
+
+            <div class="footer-item mb-2">
+                <a href="#" class="text-white text-decoration-none d-block fs-5">Preguntas<br>frecuentes</a>
+            </div>
+
+            <div class="footer-item mb-2">
+                <a href="#" class="text-white text-decoration-none d-block fs-5">Contáctanos</a>
+            </div>
+
+            <div class="footer-item mb-2">
+                <a href="#" class="text-white text-decoration-none d-block fs-5">Prensa</a>
+            </div>
+
+            <div class="footer-item mb-2">
+                <a href="#" class="text-white text-decoration-none d-block fs-5">Conferencias</a>
+            </div>
+
+            <div class="footer-item mb-2">
+                <a href="#" class="text-white text-decoration-none d-block fs-5">Términos y<br>condiciones</a>
+            </div>
+
+            <div class="footer-item mb-2">
+                <a href="#" class="text-white text-decoration-none d-block fs-5">Privacidad</a>
+            </div>
+
+            <div class="footer-item mb-2">
+                <a href="#" class="text-white text-decoration-none d-block fs-5">Estudiantes</a>
+            </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
 
 </body>
 
