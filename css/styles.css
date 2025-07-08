@@ -79,4 +79,47 @@ html,body{
     }
   }
 
+  /* En móviles: eliminar altura fija y ajustar padding */
+  @media (max-width: 767.98px) {
+    .bg-bs {
+      height: auto !important;
+      padding: 1rem !important;
+    }
+    /* Que el div que contiene texto y botón use flex para no dejar caer el botón fuera */
+    .text-btn-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto !important;
+      min-height: 100px; /* opcional para algo de altura mínima */
+    }
+
+    /* Asegurar que el botón no se vaya demasiado abajo */
+    .btn-conoce-mas {
+      align-self: flex-end;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 452.98px) {
+    .navMe {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center;
+    }
+    .navMe .navbar-brand {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+    }
+    .navMe .navbar-brand img {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      max-height: 40px; /* opcional para ajustar tamaño */
+    }
+    .navMe .navbar-toggler {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+
 
