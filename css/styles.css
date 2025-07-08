@@ -65,5 +65,18 @@ html,body{
         flex: 1 1 0;
     }
 }
+  @media (max-width: 767.98px) {
+    .custom-absolute-padding {
+      padding: 0 !important;
+      right: 1rem !important;
+      bottom: 2rem !important;
+    }
+    /* Quitar padding a los botones en móvil */
+    .custom-absolute-padding button {
+      padding: 0.25rem 0.5rem !important; /* menos padding para que queden más compactos */
+      width: 100%; /* opcional: que ocupen todo el ancho disponible */
+      max-width: 200px; /* opcional: limitar ancho para que no quede gigante */
+    }
+  }
 
 
